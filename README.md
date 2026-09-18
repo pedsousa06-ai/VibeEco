@@ -28,7 +28,7 @@ O projeto foi desenvolvido para ser flexível, podendo ser utilizado em diferent
 
 ---
 
-# 🎯 Objetivo
+## 🎯 Objetivo
 
 O principal objetivo do VibeEco é transformar o aprendizado sobre sustentabilidade em uma experiência interativa, contínua e participativa.
 
@@ -60,422 +60,425 @@ Interagir
 Compartilhar
    ↓
 Contribuir
-🏢 Empresa
-TechProton
+```
+
+---
+
+## 🏢 Empresa
+
+### TechProton
 
 A TechProton é uma empresa de tecnologia que desenvolve soluções digitais voltadas à inovação, educação e sustentabilidade.
 
 Seu principal projeto, o VibeEco, consiste em uma plataforma digital de conscientização e engajamento em sustentabilidade, utilizando recursos como conteúdos educativos, missões, desafios, gamificação e interação social para incentivar a participação dos usuários em ações sustentáveis.
 
-🏗️ Arquitetura do Projeto
+---
+
+## 🏗️ Arquitetura do Projeto
 
 O VibeEco é dividido em diferentes componentes, cada um mantido em seu próprio repositório.
 
-                           🌱 VIBEECO
-                              │
-                              │
-                    ┌─────────▼─────────┐
-                    │   BANCO DE DADOS  │
-                    │  Ryller Feitosa   │
-                    └─────────┬─────────┘
-                              │
-              ┌───────────────┴────────────────┐
-              │                                │
-       ┌──────▼───────┐                 ┌──────▼───────┐
-       │ API USUÁRIOS │                 │   API ADMIN   │
-       │ Lucas Kolle  │                 │  Lucas Kolle  │
-       └──────┬───────┘                 └──────┬───────┘
-              │                                │
-       ┌──────┴───────┐                 ┌──────▼────────┐
-       │              │                 │               │
-┌──────▼────────┐ ┌───▼───────┐   ┌────▼────────────┐  │
-│ FRONT-END     │ │  MOBILE   │   │ FRONT-END       │  │
-│ USERS         │ │ Pedro     │   │ ADMIN           │  │
-│ Gabriel       │ │ Sousa     │   │ Gabriel         │  │
-└───────────────┘ └───────────┘   └─────────────────┘  │
-Responsáveis por área
-Área	Responsável
-🗄️ Banco de Dados	Ryller Feitosa
-⚙️ Back-end	Lucas Kolle
-🖥️ Front-end	Gabriel Sousa
-📱 Mobile	Pedro Sousa
-🧑‍💼 Gerenciamento do Projeto	Pedro Sousa
-📦 Repositórios
+```mermaid
+flowchart TD
+    DB[("🗄️ Banco de Dados<br/>Ryller Feitosa")]
+    APIU["⚙️ API de Usuários<br/>Lucas Kolle"]
+    APIA["⚙️ API Admin<br/>Lucas Kolle"]
+    FEU["🖥️ Front-end Users<br/>Gabriel Sousa"]
+    MOB["📱 Mobile<br/>Pedro Sousa"]
+    FEA["🖥️ Front-end Admin<br/>Gabriel Sousa"]
+
+    DB --- APIU
+    DB --- APIA
+    APIU --- FEU
+    APIU --- MOB
+    APIA --- FEA
+```
+
+### Responsáveis por área
+
+| Área | Responsável |
+|------|-------------|
+| 🗄️ Banco de Dados | Ryller Feitosa |
+| ⚙️ Back-end | Lucas Kolle |
+| 🖥️ Front-end | Gabriel Sousa |
+| 📱 Mobile | Pedro Sousa |
+| 🧑‍💼 Gerenciamento do Projeto | Pedro Sousa |
+
+---
+
+## 📦 Repositórios
 
 O projeto é dividido em seis repositórios principais.
 
-Área	Repositório	Responsável
-🗄️ Banco de Dados	VibeEco-DataBase	Ryller Feitosa
-⚙️ Back-end Usuários	VibeEco-Back-End-Users	Lucas Kolle
-⚙️ Back-end Administrativo	VibeEco-Back-End-Adm	Lucas Kolle
-🖥️ Front-end Usuários	VibeEco-Front-End-Users	Gabriel Sousa
-🖥️ Front-end Administrativo	VibeEco-Front-End-Adm	Gabriel Sousa
-📱 Mobile	VibeEco-Mobile	Pedro Sousa
-🔗 Repositórios do Projeto
-🗄️ VibeEco-DataBase
+| Área | Repositório | Responsável |
+|------|-------------|-------------|
+| 🗄️ Banco de Dados | [VibeEco-DataBase](https://github.com/pedsousa06-ai/VibeEco-DataBase) | Ryller Feitosa |
+| ⚙️ Back-end Usuários | [VibeEco-Back-End-Users](https://github.com/pedsousa06-ai/VibeEco-Back-End-Users) | Lucas Kolle |
+| ⚙️ Back-end Administrativo | [VibeEco-Back-End-Adm](https://github.com/pedsousa06-ai/VibeEco-Back-End-Adm) | Lucas Kolle |
+| 🖥️ Front-end Usuários | [VibeEco-Front-End-Users](https://github.com/pedsousa06-ai/VibeEco-Front-End-Users) | Gabriel Sousa |
+| 🖥️ Front-end Administrativo | [VibeEco-Front-End-Adm](https://github.com/pedsousa06-ai/VibeEco-Front-End-Adm) | Gabriel Sousa |
+| 📱 Mobile | [VibeEco-Mobile](https://github.com/pedsousa06-ai/VibeEco-Mobile) | Pedro Sousa |
+
+### 🔗 Detalhes de cada repositório
+
+#### 🗄️ VibeEco-DataBase
 
 Responsável pela modelagem e implementação do banco de dados.
 
-Principais responsabilidades:
+**Principais responsabilidades:**
 
-Modelo conceitual;
-Modelo lógico;
-Modelo físico;
-Criação das tabelas;
-Chaves primárias;
-Chaves estrangeiras;
-Relacionamentos;
-Restrições;
-Scripts do banco;
-Validação da estrutura.
+- Modelo conceitual;
+- Modelo lógico;
+- Modelo físico;
+- Criação das tabelas;
+- Chaves primárias;
+- Chaves estrangeiras;
+- Relacionamentos;
+- Restrições;
+- Scripts do banco;
+- Validação da estrutura.
 
-🔗 Repositório:
-https://github.com/pedsousa06-ai/VibeEco-DataBase
+🔗 **Repositório:** <https://github.com/pedsousa06-ai/VibeEco-DataBase>
 
-⚙️ VibeEco-Back-End-Users
+#### ⚙️ VibeEco-Back-End-Users
 
 Responsável pela API utilizada pelas funcionalidades destinadas aos usuários da plataforma.
 
-Principais responsabilidades:
+**Principais responsabilidades:**
 
-Autenticação;
-Login;
-Primeiro acesso;
-Alteração de senha;
-Recuperação de senha;
-Perfil;
-Feed;
-Publicações;
-Curtidas;
-Comentários;
-Missões;
-Desafios;
-Conteúdos educativos;
-Quiz;
-XP;
-Níveis;
-Moedas;
-Conquistas;
-Ranking;
-Recompensas;
-Notificações;
-Histórico de atividades.
+- Autenticação;
+- Login;
+- Primeiro acesso;
+- Alteração de senha;
+- Recuperação de senha;
+- Perfil;
+- Feed;
+- Publicações;
+- Curtidas;
+- Comentários;
+- Missões;
+- Desafios;
+- Conteúdos educativos;
+- Quiz;
+- XP;
+- Níveis;
+- Moedas;
+- Conquistas;
+- Ranking;
+- Recompensas;
+- Notificações;
+- Histórico de atividades.
 
-🔗 Repositório:
-https://github.com/pedsousa06-ai/VibeEco-Back-End-Users
+🔗 **Repositório:** <https://github.com/pedsousa06-ai/VibeEco-Back-End-Users>
 
-⚙️ VibeEco-Back-End-Adm
+#### ⚙️ VibeEco-Back-End-Adm
 
 Responsável pela API utilizada pelas funcionalidades administrativas.
 
-Principais responsabilidades:
+**Principais responsabilidades:**
 
-Autenticação administrativa;
-Controle de acesso;
-Controle de permissões;
-Gerenciamento de usuários;
-Cadastro de usuários;
-Edição de usuários;
-Gerenciamento de missões;
-Cadastro de missões;
-Edição de missões;
-Gerenciamento de desafios;
-Cadastro de desafios;
-Edição de desafios;
-Gerenciamento de conteúdos;
-Cadastro de conteúdos;
-Edição de conteúdos;
-Gerenciamento de recompensas;
-Gerenciamento de conquistas;
-Monitoramento;
-Relatórios.
+- Autenticação administrativa;
+- Controle de acesso;
+- Controle de permissões;
+- Gerenciamento de usuários;
+- Cadastro de usuários;
+- Edição de usuários;
+- Gerenciamento de missões;
+- Cadastro de missões;
+- Edição de missões;
+- Gerenciamento de desafios;
+- Cadastro de desafios;
+- Edição de desafios;
+- Gerenciamento de conteúdos;
+- Cadastro de conteúdos;
+- Edição de conteúdos;
+- Gerenciamento de recompensas;
+- Gerenciamento de conquistas;
+- Monitoramento;
+- Relatórios.
 
-🔗 Repositório:
-https://github.com/pedsousa06-ai/VibeEco-Back-End-Adm
+🔗 **Repositório:** <https://github.com/pedsousa06-ai/VibeEco-Back-End-Adm>
 
-🖥️ VibeEco-Front-End-Users
+#### 🖥️ VibeEco-Front-End-Users
 
 Responsável pela interface web utilizada pelos usuários da plataforma.
 
-Principais áreas:
+**Principais áreas:**
 
-Login;
-Primeiro acesso;
-Recuperação de senha;
-Dashboard;
-Feed;
-Publicações;
-Comentários;
-Missões;
-Detalhes das missões;
-Desafios;
-Conteúdos educativos;
-Quiz;
-Ranking;
-Recompensas;
-Perfil;
-Histórico;
-Notificações;
-Configurações;
-Gamificação.
+- Login;
+- Primeiro acesso;
+- Recuperação de senha;
+- Dashboard;
+- Feed;
+- Publicações;
+- Comentários;
+- Missões;
+- Detalhes das missões;
+- Desafios;
+- Conteúdos educativos;
+- Quiz;
+- Ranking;
+- Recompensas;
+- Perfil;
+- Histórico;
+- Notificações;
+- Configurações;
+- Gamificação.
 
-🔗 Repositório:
-https://github.com/pedsousa06-ai/VibeEco-Front-End-Users
+🔗 **Repositório:** <https://github.com/pedsousa06-ai/VibeEco-Front-End-Users>
 
-🖥️ VibeEco-Front-End-Adm
+#### 🖥️ VibeEco-Front-End-Adm
 
 Responsável pela interface administrativa da plataforma.
 
-Principais áreas:
+**Principais áreas:**
 
-Login administrativo;
-Primeiro acesso;
-Recuperação de senha;
-Dashboard administrativo;
-Gerenciamento de usuários;
-Gerenciamento de missões;
-Gerenciamento de desafios;
-Gerenciamento de conteúdos educativos;
-Gerenciamento de recompensas;
-Gerenciamento de conquistas;
-Monitoramento;
-Relatórios;
-Configurações administrativas.
+- Login administrativo;
+- Primeiro acesso;
+- Recuperação de senha;
+- Dashboard administrativo;
+- Gerenciamento de usuários;
+- Gerenciamento de missões;
+- Gerenciamento de desafios;
+- Gerenciamento de conteúdos educativos;
+- Gerenciamento de recompensas;
+- Gerenciamento de conquistas;
+- Monitoramento;
+- Relatórios;
+- Configurações administrativas.
 
-🔗 Repositório:
-https://github.com/pedsousa06-ai/VibeEco-Front-End-Adm
+🔗 **Repositório:** <https://github.com/pedsousa06-ai/VibeEco-Front-End-Adm>
 
-📱 VibeEco-Mobile
+#### 📱 VibeEco-Mobile
 
 Responsável pelo aplicativo Mobile do VibeEco.
 
 O aplicativo utiliza a API de Usuários para disponibilizar as funcionalidades da plataforma em dispositivos móveis.
 
-Principais funcionalidades:
+**Principais funcionalidades:**
 
-Login;
-Primeiro acesso;
-Recuperação de senha;
-Feed;
-Publicações;
-Missões;
-Desafios;
-Conteúdos educativos;
-Quiz;
-Gamificação;
-Ranking;
-Recompensas;
-Perfil;
-Histórico;
-Notificações.
+- Login;
+- Primeiro acesso;
+- Recuperação de senha;
+- Feed;
+- Publicações;
+- Missões;
+- Desafios;
+- Conteúdos educativos;
+- Quiz;
+- Gamificação;
+- Ranking;
+- Recompensas;
+- Perfil;
+- Histórico;
+- Notificações.
 
-🔗 Repositório:
-https://github.com/pedsousa06-ai/VibeEco-Mobile
+🔗 **Repositório:** <https://github.com/pedsousa06-ai/VibeEco-Mobile>
 
-👥 Equipe
-🧑‍💼 Pedro Sousa
+---
 
-Função: Gerente de Projeto / Desenvolvedor Mobile
+## 👥 Equipe
 
-Responsabilidades:
+### 🧑‍💼 Pedro Sousa
 
-Gerenciamento do projeto;
-Acompanhamento das atividades;
-Organização da EAP/WBS;
-Acompanhamento do cronograma;
-Organização das entregas;
-Comunicação entre as áreas;
-Desenvolvimento do aplicativo Mobile;
-Integração do Mobile com a API;
-Testes das funcionalidades Mobile;
-Acompanhamento da documentação.
+**Função:** Gerente de Projeto / Desenvolvedor Mobile
 
-GitHub:
-https://github.com/pedsousa06-ai
+**Responsabilidades:**
 
-🖥️ Gabriel Sousa
+- Gerenciamento do projeto;
+- Acompanhamento das atividades;
+- Organização da EAP/WBS;
+- Acompanhamento do cronograma;
+- Organização das entregas;
+- Comunicação entre as áreas;
+- Desenvolvimento do aplicativo Mobile;
+- Integração do Mobile com a API;
+- Testes das funcionalidades Mobile;
+- Acompanhamento da documentação.
 
-Função: Desenvolvedor Front-end
+**GitHub:** <https://github.com/pedsousa06-ai>
 
-Responsabilidades:
+### 🖥️ Gabriel Sousa
 
-Desenvolvimento do Front-end dos usuários;
-Desenvolvimento do Front-end administrativo;
-Implementação das telas dos protótipos;
-Implementação da identidade visual;
-Integração com as APIs;
-Desenvolvimento dos componentes;
-Testes das interfaces;
-Correção e manutenção do Front-end.
+**Função:** Desenvolvedor Front-end
 
-GitHub:
-https://github.com/GabrielsrMelo
+**Responsabilidades:**
 
-⚙️ Lucas Kolle
+- Desenvolvimento do Front-end dos usuários;
+- Desenvolvimento do Front-end administrativo;
+- Implementação das telas dos protótipos;
+- Implementação da identidade visual;
+- Integração com as APIs;
+- Desenvolvimento dos componentes;
+- Testes das interfaces;
+- Correção e manutenção do Front-end.
 
-Função: Desenvolvedor Back-end
+**GitHub:** <https://github.com/GabrielsrMelo>
 
-Responsabilidades:
+### ⚙️ Lucas Kolle
 
-Desenvolvimento da API de Usuários;
-Desenvolvimento da API Administrativa;
-Implementação das regras de negócio;
-Desenvolvimento dos endpoints;
-Integração com o banco de dados;
-Autenticação;
-Autorização;
-Validação das informações;
-Testes das APIs;
-Manutenção do Back-end.
+**Função:** Desenvolvedor Back-end
 
-GitHub:
-https://github.com/Lucas-Kolle
+**Responsabilidades:**
 
-🗄️ Ryller Feitosa
+- Desenvolvimento da API de Usuários;
+- Desenvolvimento da API Administrativa;
+- Implementação das regras de negócio;
+- Desenvolvimento dos endpoints;
+- Integração com o banco de dados;
+- Autenticação;
+- Autorização;
+- Validação das informações;
+- Testes das APIs;
+- Manutenção do Back-end.
 
-Função: Desenvolvedor de Banco de Dados
+**GitHub:** <https://github.com/Lucas-Kolle>
 
-Responsabilidades:
+### 🗄️ Ryller Feitosa
 
-Modelagem do banco de dados;
-Desenvolvimento do modelo conceitual;
-Desenvolvimento do modelo lógico;
-Desenvolvimento do modelo físico;
-Criação das tabelas;
-Definição das chaves;
-Definição dos relacionamentos;
-Implementação das restrições;
-Validação da estrutura;
-Manutenção do banco de dados.
+**Função:** Desenvolvedor de Banco de Dados
 
-GitHub:
-https://github.com/ryllerfeitosadba
+**Responsabilidades:**
 
-🧩 Funcionalidades
-👤 Área do Usuário
-🔐 Acesso
-Login;
-Primeiro acesso;
-Alteração de senha;
-Recuperação de senha.
-🏠 Plataforma
-Dashboard;
-Feed da comunidade;
-Publicações;
-Comentários;
-Curtidas;
-Missões;
-Desafios;
-Conteúdos educativos;
-Quiz.
-🏆 Gamificação
-XP;
-Níveis;
-Moedas Verdes;
-Conquistas;
-Ranking;
-Recompensas.
-👤 Perfil
-Perfil do usuário;
-Histórico de atividades;
-Notificações;
-Configurações.
-👨‍💼 Área Administrativa
+- Modelagem do banco de dados;
+- Desenvolvimento do modelo conceitual;
+- Desenvolvimento do modelo lógico;
+- Desenvolvimento do modelo físico;
+- Criação das tabelas;
+- Definição das chaves;
+- Definição dos relacionamentos;
+- Implementação das restrições;
+- Validação da estrutura;
+- Manutenção do banco de dados.
+
+**GitHub:** <https://github.com/ryllerfeitosadba>
+
+---
+
+## 🧩 Funcionalidades
+
+### 👤 Área do Usuário
+
+#### 🔐 Acesso
+
+- Login;
+- Primeiro acesso;
+- Alteração de senha;
+- Recuperação de senha.
+
+#### 🏠 Plataforma
+
+- Dashboard;
+- Feed da comunidade;
+- Publicações;
+- Comentários;
+- Curtidas;
+- Missões;
+- Desafios;
+- Conteúdos educativos;
+- Quiz.
+
+#### 🏆 Gamificação
+
+- XP;
+- Níveis;
+- Moedas Verdes;
+- Conquistas;
+- Ranking;
+- Recompensas.
+
+#### 👤 Perfil
+
+- Perfil do usuário;
+- Histórico de atividades;
+- Notificações;
+- Configurações.
+
+### 👨‍💼 Área Administrativa
 
 O administrador possui ferramentas para gerenciamento e acompanhamento da plataforma.
 
-📊 Dashboard
-Visão geral da plataforma;
-Atalhos administrativos;
-Indicadores de participação.
-👥 Usuários
-Visualização de usuários;
-Cadastro;
-Edição;
-Exclusão;
-Gerenciamento de usuários.
-🎯 Missões
-Cadastro;
-Edição;
-Gerenciamento;
-Definição de objetivos;
-Definição de recompensas;
-Acompanhamento da participação.
-🏆 Desafios
-Cadastro;
-Edição;
-Gerenciamento;
-Definição de objetivos;
-Definição de período;
-Definição de recompensas.
-📚 Conteúdos
-Cadastro;
-Edição;
-Gerenciamento;
-Categorias;
-Anexos;
-Descrição;
-Tipos de conteúdo.
-📈 Monitoramento
-Participação dos usuários;
-Atividades;
-Missões;
-Desafios;
-Indicadores;
-Resultados.
-🔗 Comunicação entre os Componentes
+#### 📊 Dashboard
 
-A comunicação entre os componentes segue a arquitetura:
+- Visão geral da plataforma;
+- Atalhos administrativos;
+- Indicadores de participação.
 
-                 ┌───────────────────┐
-                 │   VibeEco Mobile  │
-                 └─────────┬─────────┘
-                           │
-                           ▼
-                 ┌───────────────────┐
-                 │  API de Usuários  │
-                 └─────────┬─────────┘
-                           │
-                           │
-                 ┌─────────▼─────────┐
-                 │   BANCO DE DADOS  │
-                 └─────────┬─────────┘
-                           │
-                           ▲
-                           │
-                 ┌─────────┴─────────┐
-                 │   API Admin       │
-                 └─────────┬─────────┘
-                           │
-                           ▼
-                 ┌───────────────────┐
-                 │ Front-end Admin   │
-                 └───────────────────┘
+#### 👥 Usuários
 
-O Front-end de Usuários também utiliza a API de Usuários:
+- Visualização de usuários;
+- Cadastro;
+- Edição;
+- Exclusão;
+- Gerenciamento de usuários.
 
-┌───────────────────────┐
-│ Front-end de Usuários │
-└───────────┬───────────┘
-            │
-            ▼
-┌───────────────────────┐
-│    API de Usuários    │
-└───────────┬───────────┘
-            │
-            ▼
-┌───────────────────────┐
-│     Banco de Dados    │
-└───────────────────────┘
-📋 Requisitos Funcionais
+#### 🎯 Missões
 
+- Cadastro;
+- Edição;
+- Gerenciamento;
+- Definição de objetivos;
+- Definição de recompensas;
+- Acompanhamento da participação.
 
-EAP - https://miro.com/app/board/uXjVHoWnbAk=/
+#### 🏆 Desafios
 
-🗄️ Banco de Dados
+- Cadastro;
+- Edição;
+- Gerenciamento;
+- Definição de objetivos;
+- Definição de período;
+- Definição de recompensas.
 
-O banco de dados é dividido em três etapas principais:
+#### 📚 Conteúdos
 
+- Cadastro;
+- Edição;
+- Gerenciamento;
+- Categorias;
+- Anexos;
+- Descrição;
+- Tipos de conteúdo.
+
+#### 📈 Monitoramento
+
+- Participação dos usuários;
+- Atividades;
+- Missões;
+- Desafios;
+- Indicadores;
+- Resultados.
+
+---
+
+## 🔗 Comunicação entre os Componentes
+
+O **Mobile** e o **Front-end de Usuários** consomem a **API de Usuários**, enquanto o **Front-end Administrativo** consome a **API Admin**. Ambas as APIs acessam o mesmo banco de dados.
+
+```mermaid
+flowchart TD
+    MOB["📱 VibeEco Mobile"] --> APIU["⚙️ API de Usuários"]
+    FEU["🖥️ Front-end de Usuários"] --> APIU
+    FEA["🖥️ Front-end Admin"] --> APIA["⚙️ API Admin"]
+    APIU --> DB[("🗄️ Banco de Dados")]
+    APIA --> DB
+```
+
+---
+
+## 📋 Requisitos Funcionais
+
+<!-- TODO: listar aqui os requisitos funcionais do projeto -->
+
+**EAP/WBS:** <https://miro.com/app/board/uXjVHoWnbAk=/>
+
+---
+
+## 🗄️ Banco de Dados
+
+O desenvolvimento do banco de dados segue as etapas abaixo:
+
+```text
 Modelo Conceitual
        ↓
 Modelo Lógico
@@ -485,110 +488,88 @@ Modelo Físico
 Implementação
        ↓
 Validação
-Modelo Conceitual
-Levantamento das entidades;
-Definição dos atributos;
-Definição dos relacionamentos;
-Definição das cardinalidades;
-Revisão do modelo.
-Modelo Lógico
-Transformação das entidades em tabelas;
-Definição das chaves primárias;
-Definição das chaves estrangeiras;
-Definição dos atributos;
-Definição dos tipos de dados;
-Revisão do modelo.
-Modelo Físico
-Criação do banco;
-Criação das tabelas;
-Criação das chaves;
-Criação das restrições;
-Criação dos relacionamentos;
-Configuração do banco.
-⚙️ Back-end
+```
+
+### Modelo Conceitual
+
+- Levantamento das entidades;
+- Definição dos atributos;
+- Definição dos relacionamentos;
+- Definição das cardinalidades;
+- Revisão do modelo.
+
+### Modelo Lógico
+
+- Transformação das entidades em tabelas;
+- Definição das chaves primárias;
+- Definição das chaves estrangeiras;
+- Definição dos atributos;
+- Definição dos tipos de dados;
+- Revisão do modelo.
+
+### Modelo Físico
+
+- Criação do banco;
+- Criação das tabelas;
+- Criação das chaves;
+- Criação das restrições;
+- Criação dos relacionamentos;
+- Configuração do banco.
+
+---
+
+## ⚙️ Back-end
 
 O Back-end é dividido em duas APIs.
 
-API de Usuários
+### API de Usuários
 
 Responsável pelas funcionalidades utilizadas pelos usuários.
 
-Autenticação
-     ↓
-Perfil
-     ↓
-Feed
-     ↓
-Missões
-     ↓
-Desafios
-     ↓
-Conteúdos
-     ↓
-Quiz
-     ↓
-Gamificação
-     ↓
-Ranking
-     ↓
-Recompensas
-     ↓
-Notificações
-     ↓
-Histórico
-API Administrativa
+```text
+Autenticação → Perfil → Feed → Missões → Desafios → Conteúdos
+→ Quiz → Gamificação → Ranking → Recompensas → Notificações → Histórico
+```
+
+### API Administrativa
 
 Responsável pelas funcionalidades de administração.
 
-Autenticação Admin
-        ↓
-Controle de acesso
-        ↓
-Usuários
-        ↓
-Missões
-        ↓
-Desafios
-        ↓
-Conteúdos
-        ↓
-Recompensas
-        ↓
-Conquistas
-        ↓
-Monitoramento
-        ↓
-Relatórios
-🖥️ Front-end
+```text
+Autenticação Admin → Controle de acesso → Usuários → Missões → Desafios
+→ Conteúdos → Recompensas → Conquistas → Monitoramento → Relatórios
+```
+
+---
+
+## 🖥️ Front-end
 
 O Front-end possui duas áreas principais:
 
-Front-end de Usuários
+- **Front-end de Usuários:** interface destinada aos usuários da plataforma.
+- **Front-end Administrativo:** interface destinada aos administradores responsáveis pelo gerenciamento da plataforma.
 
-Interface destinada aos usuários da plataforma.
+---
 
-Front-end Administrativo
+## 📱 Mobile
 
-Interface destinada aos administradores responsáveis pelo gerenciamento da plataforma.
+O aplicativo Mobile utiliza a API de Usuários e disponibiliza as principais funcionalidades destinadas aos usuários.
 
+```text
 📱 Mobile
+    ↓
+⚙️ API Usuários
+    ↓
+🗄️ Banco de Dados
+```
 
-O aplicativo Mobile utiliza a API de Usuários.
+---
 
-             📱 MOBILE
-                 │
-                 ▼
-        ⚙️ API USUÁRIOS
-                 │
-                 ▼
-          🗄️ BANCO DE DADOS
-
-O Mobile disponibiliza as principais funcionalidades destinadas aos usuários.
-
-🔄 Processo de Desenvolvimento
+## 🔄 Processo de Desenvolvimento
 
 O desenvolvimento das funcionalidades segue um processo incremental.
 
+```text
 Definição da funcionalidade
           ↓
 Desenvolvimento do Back-end
@@ -604,152 +585,186 @@ Correções
 Validação
           ↓
 Próxima funcionalidade
+```
 
 Os testes são realizados durante o desenvolvimento de cada funcionalidade, evitando concentrar toda a validação apenas no final do projeto.
 
-🧪 Testes
+---
+
+## 🧪 Testes
 
 Os testes devem acompanhar o desenvolvimento dos componentes.
 
-Banco de Dados
-Testes da estrutura;
-Testes dos relacionamentos;
-Testes das restrições;
-Validação dos dados.
-Back-end
-Testes de endpoints;
-Testes de autenticação;
-Testes das regras de negócio;
-Testes de integração;
-Testes de erros e validações.
-Front-end
-Testes das telas;
-Testes de navegação;
-Testes de integração;
-Testes das funcionalidades;
-Testes de interface.
-Mobile
-Testes das telas;
-Testes de navegação;
-Testes de integração com a API;
-Testes das funcionalidades;
-Testes de diferentes fluxos de utilização.
-🔐 Segurança
+### Banco de Dados
+
+- Testes da estrutura;
+- Testes dos relacionamentos;
+- Testes das restrições;
+- Validação dos dados.
+
+### Back-end
+
+- Testes de endpoints;
+- Testes de autenticação;
+- Testes das regras de negócio;
+- Testes de integração;
+- Testes de erros e validações.
+
+### Front-end
+
+- Testes das telas;
+- Testes de navegação;
+- Testes de integração;
+- Testes das funcionalidades;
+- Testes de interface.
+
+### Mobile
+
+- Testes das telas;
+- Testes de navegação;
+- Testes de integração com a API;
+- Testes das funcionalidades;
+- Testes de diferentes fluxos de utilização.
+
+---
+
+## 🔐 Segurança
 
 O sistema deverá considerar mecanismos de segurança para:
 
-Autenticação dos usuários;
-Controle de acesso;
-Controle de permissões;
-Proteção das informações;
-Proteção das credenciais;
-Validação dos dados;
-Comunicação segura entre os componentes.
-🎨 Identidade Visual
+- Autenticação dos usuários;
+- Controle de acesso;
+- Controle de permissões;
+- Proteção das informações;
+- Proteção das credenciais;
+- Validação dos dados;
+- Comunicação segura entre os componentes.
+
+---
+
+## 🎨 Identidade Visual
 
 A identidade visual do VibeEco foi desenvolvida com foco em:
 
-🌱 Sustentabilidade;
-💻 Tecnologia;
-📚 Educação;
-👥 Comunidade;
-🎮 Gamificação.
-Diretrizes visuais
-Verde como cor principal;
-Tons claros;
-Branco;
-Tons neutros;
-Elementos relacionados à sustentabilidade;
-Interface moderna;
-Interface limpa;
-Boa legibilidade;
-Acessibilidade.
+- 🌱 Sustentabilidade;
+- 💻 Tecnologia;
+- 📚 Educação;
+- 👥 Comunidade;
+- 🎮 Gamificação.
+
+### Diretrizes visuais
+
+- Verde como cor principal;
+- Tons claros;
+- Branco;
+- Tons neutros;
+- Elementos relacionados à sustentabilidade;
+- Interface moderna;
+- Interface limpa;
+- Boa legibilidade;
+- Acessibilidade.
 
 O projeto busca manter uma identidade moderna, profissional e acessível, evitando uma aparência excessivamente infantil.
 
-🖼️ Protótipos
+---
 
-O projeto possui protótipos de alta fidelidade desenvolvidos para diferentes plataformas.
+## 🖼️ Protótipos
 
-🖥️ Desktop
+O projeto possui protótipos de alta fidelidade desenvolvidos para diferentes plataformas:
 
-Protótipo das interfaces destinadas aos usuários em computadores.
-
-📱 Mobile
-
-Protótipo das interfaces destinadas ao aplicativo Mobile.
-
-🧑‍💼 Administrativo
-
-Protótipo das interfaces destinadas aos administradores.
+- 🖥️ **Desktop:** interfaces destinadas aos usuários em computadores.
+- 📱 **Mobile:** interfaces destinadas ao aplicativo Mobile.
+- 🧑‍💼 **Administrativo:** interfaces destinadas aos administradores.
 
 Os protótipos servem como referência visual para o desenvolvimento das interfaces.
 
-📚 Documentação do Projeto
+---
+
+## 📚 Documentação do Projeto
 
 A documentação do VibeEco contempla:
 
-Requisitos funcionais;
-Requisitos não funcionais;
-Regras de negócio;
-EAP/WBS;
-Cronograma;
-Modelo conceitual;
-Modelo lógico;
-Modelo físico;
-Protótipos;
-Arquitetura do sistema;
-Documentação das APIs;
-Estrutura dos projetos;
-Testes;
-Processo de desenvolvimento.
-📊 Status do Projeto
+- Requisitos funcionais;
+- Requisitos não funcionais;
+- Regras de negócio;
+- EAP/WBS;
+- Cronograma;
+- Modelo conceitual;
+- Modelo lógico;
+- Modelo físico;
+- Protótipos;
+- Arquitetura do sistema;
+- Documentação das APIs;
+- Estrutura dos projetos;
+- Testes;
+- Processo de desenvolvimento.
 
-🚧 Em desenvolvimento
+---
 
-Planejamento
- Levantamento de requisitos
- Definição dos requisitos
- EAP/WBS
- Protótipo Desktop
- Protótipo Mobile
- Protótipo Administrativo
- Cronograma final
-Banco de Dados
- Modelo conceitual
- Modelo lógico
- Modelo físico
- Implementação
- Validação
-Back-end
- API de Usuários
- API Administrativa
- Integração com banco
- Testes
-Front-end
- Front-end de Usuários
- Front-end Administrativo
- Integração com APIs
- Testes
-Mobile
- Aplicativo Mobile
- Integração com API
- Testes
-🚀 Próximas Etapas
+## 📊 Status do Projeto
+
+🚧 **Em desenvolvimento**
+
+### Planejamento
+
+- [ ] Levantamento de requisitos
+- [ ] Definição dos requisitos
+- [ ] EAP/WBS
+- [ ] Protótipo Desktop
+- [ ] Protótipo Mobile
+- [ ] Protótipo Administrativo
+- [ ] Cronograma final
+
+### Banco de Dados
+
+- [ ] Modelo conceitual
+- [ ] Modelo lógico
+- [ ] Modelo físico
+- [ ] Implementação
+- [ ] Validação
+
+### Back-end
+
+- [ ] API de Usuários
+- [ ] API Administrativa
+- [ ] Integração com banco
+- [ ] Testes
+
+### Front-end
+
+- [ ] Front-end de Usuários
+- [ ] Front-end Administrativo
+- [ ] Integração com APIs
+- [ ] Testes
+
+### Mobile
+
+- [ ] Aplicativo Mobile
+- [ ] Integração com API
+- [ ] Testes
+
+---
+
+## 🚀 Próximas Etapas
 
 As próximas etapas do projeto estão relacionadas ao desenvolvimento da aplicação:
 
-Implementação do banco de dados;
-Desenvolvimento das APIs;
-Desenvolvimento do Front-end;
-Desenvolvimento do aplicativo Mobile;
-Integração entre os componentes;
-Testes das funcionalidades;
-Correções;
-Validação;
-Finalização da documentação;
-Entrega final do projeto.
-📁 Organização dos Repositórios
+1. Implementação do banco de dados;
+2. Desenvolvimento das APIs;
+3. Desenvolvimento do Front-end;
+4. Desenvolvimento do aplicativo Mobile;
+5. Integração entre os componentes;
+6. Testes das funcionalidades;
+7. Correções;
+8. Validação;
+9. Finalização da documentação;
+10. Entrega final do projeto.
+
+---
+
+## 📁 Organização dos Repositórios
+
+```text
 VibeEco
 │
 ├── 📁 VibeEco-DataBase
@@ -769,36 +784,51 @@ VibeEco
 │
 └── 📁 VibeEco-Mobile
     └── Aplicativo Mobile
-🤝 Organização da Equipe
-                    👤 GERENTE DE PROJETO
-                       Pedro Sousa
-                            │
-          ┌─────────────────┼─────────────────┐
-          │                 │                 │
-          ▼                 ▼                 ▼
-    🗄️ BANCO           ⚙️ BACK-END       🖥️ FRONT-END
- Ryller Feitosa         Lucas Kolle       Gabriel Sousa
-                            │
-                            │
-                            ▼
-                       📱 MOBILE
-                      Pedro Sousa
-🌱 Visão do Projeto
+```
+
+---
+
+## 🤝 Organização da Equipe
+
+```mermaid
+flowchart TD
+    GP["👤 Gerente de Projeto<br/>Pedro Sousa"]
+    DB["🗄️ Banco de Dados<br/>Ryller Feitosa"]
+    BE["⚙️ Back-end<br/>Lucas Kolle"]
+    FE["🖥️ Front-end<br/>Gabriel Sousa"]
+    MOB["📱 Mobile<br/>Pedro Sousa"]
+
+    GP --> DB
+    GP --> BE
+    GP --> FE
+    GP --> MOB
+    BE -.->|API de Usuários| MOB
+```
+
+---
+
+## 🌱 Visão do Projeto
 
 O VibeEco busca unir tecnologia, educação, sustentabilidade e gamificação em uma única plataforma.
 
 A proposta é criar uma experiência na qual ações sustentáveis possam ser transformadas em atividades acompanháveis, permitindo que os usuários aprendam, participem, evoluam e interajam dentro de uma comunidade.
 
-📄 Licença
+---
+
+## 📄 Licença
 
 Este projeto foi desenvolvido pela equipe TechProton como parte do projeto VibeEco.
 
 Informações sobre licenciamento e distribuição deverão ser definidas pela equipe responsável pelo projeto.
 
-👨‍💻 TechProton
+---
 
-Projeto: VibeEco
-Empresa: TechProton
-Categoria: Tecnologia • Sustentabilidade • Educação
-Status: Em desenvolvimento
-Início: 10/08/2026
+## 👨‍💻 TechProton
+
+| | |
+|---|---|
+| **Projeto** | VibeEco |
+| **Empresa** | TechProton |
+| **Categoria** | Tecnologia • Sustentabilidade • Educação |
+| **Status** | Em desenvolvimento |
+| **Início** | 10/08/2026 |
