@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="./docs/logo-vibeeco.png" alt="Logo VibeEco" width="220">
+  <img src="https://github.com/pedsousa06-ai/VibeEco-Figma" alt="Logo VibeEco" width="220">
 </p>
 
 ---
