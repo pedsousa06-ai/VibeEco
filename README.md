@@ -112,7 +112,7 @@ O projeto é dividido em seis repositórios principais.
 
 | Área | Repositório | Responsável |
 |------|-------------|-------------|
-| 🗄️ Documentação | [VibeEco-Documentação](https://github.com/pedsousa06-ai/VibeEco-Docs) | Pedro Sousa |
+| 📓 Documentação | [VibeEco-Documentação](https://github.com/pedsousa06-ai/VibeEco-Docs) | Pedro Sousa |
 | 🗄️ Banco de Dados | [VibeEco-DataBase](https://github.com/pedsousa06-ai/VibeEco-DataBase) | Ryller Feitosa |
 | ⚙️ Back-end Usuários | [VibeEco-Back-End-Users](https://github.com/pedsousa06-ai/VibeEco-Back-End-Users) | Lucas Kolle |
 | ⚙️ Back-end Administrativo | [VibeEco-Back-End-Adm](https://github.com/pedsousa06-ai/VibeEco-Back-End-Adm) | Lucas Kolle |
