@@ -28,6 +28,20 @@ O projeto foi desenvolvido para ser flexível, podendo ser utilizado em diferent
 
 ---
 
+## 🎬 Pitch de Apresentação
+
+Assista ao pitch de apresentação do VibeEco:
+
+<p align="center">
+  <a href="https://youtu.be/qftHqiGnLKo?si=aE9PrDz4_yZldvjz">
+    <img src="https://img.youtube.com/vi/qftHqiGnLKo/maxresdefault.jpg" alt="Pitch de Apresentação do VibeEco" width="600">
+  </a>
+</p>
+
+▶️ **Assistir no YouTube:** <https://youtu.be/qftHqiGnLKo?si=aE9PrDz4_yZldvjz>
+
+---
+
 ## 🎯 Objetivo
 
 O principal objetivo do VibeEco é transformar o aprendizado sobre sustentabilidade em uma experiência interativa, contínua e participativa.
