@@ -34,7 +34,6 @@ Assista ao pitch de apresentação do VibeEco:
 
 <p align="center">
   <a href="https://youtu.be/qftHqiGnLKo?si=aE9PrDz4_yZldvjz">
-    <img src="https://img.youtube.com/vi/qftHqiGnLKo/maxresdefault.jpg" alt="Pitch de Apresentação do VibeEco" width="600">
   </a>
 </p>
 
