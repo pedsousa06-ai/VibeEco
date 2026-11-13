@@ -33,11 +33,11 @@ O projeto foi desenvolvido para ser flexível, podendo ser utilizado em diferent
 Assista ao pitch de apresentação do VibeEco:
 
 <p align="center">
-  <a href="https://youtu.be/qftHqiGnLKo?si=aE9PrDz4_yZldvjz">
+  <a href="https://youtu.be/2hnDBj2FwNo">
   </a>
 </p>
 
-▶️ **Assistir no YouTube:** <https://youtu.be/qftHqiGnLKo?si=aE9PrDz4_yZldvjz>
+▶️ **Assistir no YouTube:** <https://youtu.be/2hnDBj2FwNo>
 
 ---
 
